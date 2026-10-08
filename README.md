@@ -75,9 +75,9 @@ modulo = prvi % drugi
 Včasih se potrebujemo vprašati
 
 ```python
-+if <em>pogoj</em>:
+if pogoj:
     posledica
-elif <em>pogoj</em>:
+elif pogoj:
     posledica
 else:
     posledica
