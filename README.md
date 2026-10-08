@@ -33,7 +33,43 @@ print("ti")
 ```
 
 Parameter <b>end</b> določi ločilo med elementi printa.
+```python
+print("Živjo", end="---")
+print("ti")
+#Živjo---ti
+```
 
+### Matematične operacije
+
+1. Vsota
+
+```python
+vsota = prvi + drugi
+```
+2. Odštevanje
+
+```python
+razlika = prvi - drugi
+```
+3. Množenje
+
+```python
+zmnozek = prvi * drugi
+```
+4. Deljenje
+
+```python
+deljenje = prvi / drugi
+```
+
+5. Modulo
+
+Modulo predstavlja vrednost, ki ostane pri deljenju dveh števil (ostanek).
+
+```python
+modulo = prvi % drugi
+# 15 % 7 = 1
+```
 
 
 

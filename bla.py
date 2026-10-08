@@ -1,2 +1,2 @@
-print("Živjo", end=" ")
-print("sjdklsjdlksj")
+deljenje = 15 / 7
+print(deljenje)
