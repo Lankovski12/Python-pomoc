@@ -72,7 +72,7 @@ modulo = prvi % drugi
 ```
 ### IF stavki
 
-Včasih se potrebujemo vprašati
+Včasih se nam lahko zgodi več različnih dogotkov in potrebujemo vsakega posebej obravnavati. Zato uporabimo IF stavke, kjer lahko v vsakem pogoji ločimo med različnimi dogotki, ki so se zgodili in njihovo obravnavanje. 
 
 ```python
 if pogoj:
@@ -82,5 +82,19 @@ elif pogoj:
 else:
     posledica
 ```
+
+V pogojih uporabljamo operatorje:
+
+1. ==
+Ki preveri, če sta leva in desna stran enaki. (Ne mešaj z =, ki levi strani priredi desno stran!!!!!)
+
+2. <, >, <=, >=
+Preverjata ali je nekaj manjše, večje ali enako
+
+3. !=
+Obratno od ==. Ta preveri, če sta leva in desna stran različni.
+
+## Naloga
+Skupaj bomo danes napisali preprost program Kalulator.py. Uporabili bomo vse matematične operatorje, ki smo jih spoznali. Ali moramo uporabljati IF stavke?
 
 
