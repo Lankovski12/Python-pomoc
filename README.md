@@ -70,6 +70,17 @@ Modulo predstavlja vrednost, ki ostane pri deljenju dveh števil (ostanek).
 modulo = prvi % drugi
 # 15 % 7 = 1
 ```
+### IF stavki
 
+Včasih se potrebujemo vprašati
+
+```python
++if <em>pogoj</em>:
+    posledica
+elif <em>pogoj</em>:
+    posledica
+else:
+    posledica
+```
 
 
