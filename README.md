@@ -104,7 +104,28 @@ ime = input("Vnesi svoje ime: ")
 prvo_stevilo = int(input("Vnesi prvo število: "))
 ```
 
-## Naloga
+### While zanka
+Včasih želimo, da se del kode izvede večkrat zaporedoma, vse dokler velja določen pogoj. Zato uporabimo WHILE zanko, ki na začetku preveri pogoj, in če je resničen (True), izvede kodo. To ponavlja toliko časa, dokler pogoj ne postane neresničen (False).
+
+while pogoj:
+    posledica (koda, ki se ponavlja)
+
+Pazi! V zanki moraš nujno poskrbeti, da se pogoj slej ko prej spremeni (npr. povečaš števec, spremeniš spremenljivko). Če tega ne narediš, se bo zanka vrtela v neskončnost!! (Če se ti to zgodi, pritisni CTRL + C).
+
+Primer:
+```python
+odstevanje = 5
+
+while odstevanje > 0:
+    print(odstevanje)
+    odstevanje = odstevanje - 1
+    # ali pa
+    # odstevanje -= 1
+
+print("Vzlet")
+```
+
+## Stare naloge
 1. Dokončaj kalkulator. Moraš imeti vseh 5 operaciji. Lahko nadgradiš kalkulator tako, da izpiše kot rezultat celotni račun, torej
 
 ```python
@@ -130,5 +151,23 @@ Film ima oznako 15+. Če je oseba mlajša od 15 let, ji program izpiše: "Oprost
 Če obiskovalec kupi VIP sedež (program naj vpraša z "da" ali "ne"), se ceni prišteje še 3 EUR.
 
 Program naj izpiše končno ceno vstopnice.
+
+## Nove naloge
+
+1. Skrito geslo
+Napiši program, ki uporabnika sprašuje “Vnesi geslo: “, dokler ne vnese besede “python”. Ko ugane, naj program izpiše “Vstop dovoljen”.
+Namig: uporabi funkcijo input() in preverjaj, če je geslo različno (!=) od skrivne besede.
+
+2. Zbiranje točk v igri
+Igraš igro, kjer zbiraš točke. Začneš z 0 točkami. V vsakem koraku zanke naj te program vpraša “Koliko točk si dobil?” in jih prišteje k tvojemu skupnemu številu točk. Zanka naj teče, dokler nimaš vsaj 20 točk. Na koncu izpiši “Zmagal si!”.
+
+3. Nakupovanje v trgovini
+Uporabnik ima v denarnici 50 evrov. Napiši program, ki ga v zanki sprašuje "Koliko stane izdelek, ki ga želiš kupiti? ". Ceno odštej od njegovega denarja in mu izpiši, koliko mu je še ostalo. Zanka naj teče toliko časa, dokler ima v denarnici več kot 0 evrov. Če želi kupiti izdelek, ki je dražji od preostalega denarja, mu izpiši "Nimaš dovolj denarja za ta izdelek!".
+
+4. Bankomat in varnostni PIN
+Skrita PIN koda je "1234". Uporabnik ima na voljo samo 3 poskuse, da vnese pravilen PIN. Napiši program, ki ga v zanki sprašuje "Vnesi PIN: ". Zanka naj teče, dokler PIN ni pravilen IN dokler ima uporabnik še kaj poskusov. Če vnese pravilen PIN, naj se izpiše "Uspešna prijava!". Če porabi vse 3 poskuse in ne ugane, naj se izpiše "Kartica je blokirana!".
+
+5. Igra ugibanja števil
+Računalnik si je "zamislil" število 42. Uporabnik mora to število uganiti. V zanki ga program sprašuje po številu. Če uporabnik vnese manjše število, program izpiše "Moje število je večje.". Če vnese večje, program izpiše "Moje število je manjše.". Zanka se konča, ko uporabnik število ugane, na koncu pa se izpiše "Bravo, uganil si!".
 
 
