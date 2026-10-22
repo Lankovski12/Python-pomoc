@@ -178,3 +178,8 @@ Skrita PIN koda je "1234". Uporabnik ima na voljo samo 3 poskuse, da vnese pravi
 Računalnik si je "zamislil" število 42. Uporabnik mora to število uganiti. V zanki ga program sprašuje po številu. Če uporabnik vnese manjše število, program izpiše "Moje število je večje.". Če vnese večje, program izpiše "Moje število je manjše.". Zanka se konča, ko uporabnik število ugane, na koncu pa se izpiše "Bravo, uganil si!".
 
 
+## Nujna naloga
+
+Poznaš igro 2 resnici, 1 laž? Naredi program, ki izpiše 3 stavke, dva naj veljata zate, en naj bo laž o tebi. Na koncu naj program čaka, da midva z Reubenom vpišema številko stavka, ki menima da je laž. Program naj izpiše, ali sva ugotovila pravilno ali narobe. 
+
+
