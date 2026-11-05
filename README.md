@@ -127,6 +127,33 @@ while odstevanje > 0:
 print("Vzlet")
 ```
 
+### For zanka
+
+Včasih že vnaprej vemo, kolikokrat natančno želimo ponoviti del kode (na primer: izpiši številke od 1 do 10, ali pa ponovi kodo 5-krat). Takrat namesto while zanke raje uporabimo FOR zanko.
+
+Zelo pogosto jo uporabljamo skupaj s funkcijo range(), ki nam ustvari zaporedje števil.
+
+```python
+for spremenljivka in zaporedje:
+    posledica (koda, ki se ponavlja)
+```
+
+Pazi! Funkcija range(n) začne šteti pri 0 in konča tik pred n. To pomeni, da range(5) ustvari števila: 0, 1, 2, 3, 4 (skupaj natanko 5 števil, a brez petice!). Če želiš začeti pri drugem številu in končati drugje, uporabiš range(zacetek, konec). Lahko poveš tudi s kakšnim korakom se štetje spreminja. range(10,0,-1) bo štel od 10 do vključno 1 in brez 0.
+
+```python
+print("Začenjam štetje:")
+for i in range(5):
+    print(i)
+print("Konec!")
+
+# izpis je
+0
+1
+2
+3
+4
+```
+
 ## Stare naloge
 1. Dokončaj kalkulator. Moraš imeti vseh 5 operaciji. Lahko nadgradiš kalkulator tako, da izpiše kot rezultat celotni račun, torej
 
@@ -154,7 +181,7 @@ Film ima oznako 15+. Če je oseba mlajša od 15 let, ji program izpiše: "Oprost
 
 Program naj izpiše končno ceno vstopnice.
 
-## Nove naloge
+## Naloge samo z while
 
 1. Skrito geslo
 
@@ -177,9 +204,28 @@ Skrita PIN koda je "1234". Uporabnik ima na voljo samo 3 poskuse, da vnese pravi
 
 Računalnik si je "zamislil" število 42. Uporabnik mora to število uganiti. V zanki ga program sprašuje po številu. Če uporabnik vnese manjše število, program izpiše "Moje število je večje.". Če vnese večje, program izpiše "Moje število je manjše.". Zanka se konča, ko uporabnik število ugane, na koncu pa se izpiše "Bravo, uganil si!".
 
+## Naloge za for in while
 
-## Nujna naloga
+1. Napiši program, ki uporabnika vpraša: "Katero besedo naj ponavljam?". Nato naj program to besedo izpiše natanko 5-krat. Namig za while: Ustvari števec, ki se začne pri 0 in povečuje do 5. Namig za for: Uporabi range(5).
 
-Poznaš igro 2 resnici, 1 laž? Naredi program, ki izpiše 3 stavke, dva naj veljata zate, en naj bo laž o tebi. Na koncu naj program čaka, da midva z Reubenom vpišema številko stavka, ki menima da je laž. Program naj izpiše, ali sva ugotovila pravilno ali narobe. 
+Bonus naloga: 5 spremeni na uporabnikov vnos
 
+2. Napiši program, ki odšteva od 10 do 1. Na koncu naj izpiše "Srečno novo leto!". Namig za while: Začni spremenljivko pri 10 in v vsakem koraku odštej 1 (-= 1).Namig za for: Poskusi range(10, 0, -1).
 
+3. Napiši program, ki izpiše samo soda števila od 2 do 10 (torej: 2, 4, 6, 8, 10). Namig za while: Števec začni pri 2 in ga v vsakem koraku zanke povečaj za dve (+= 2). Namig za for: Ali veš, da ima funkcija range lahko tudi tretjo številko, ki določa korak? Poskusi range(2, 11, 2).
+
+4. Napiši program, ki izračuna in izpiše kvadrate prvih petih števil (od 1 do 5). Kvadrat števila dobiš tako, da ga pomnožiš samega s seboj (npr. 2 * 2). Program naj izpiše: 1, 4, 9, 16, 25. Namig za while: Števec naj gre od 1 do 5. V zanki izpiši vrednost števec * števec. Namig za for: Uporabi for i in range(1, 6): in znotraj zanke izpiši i * i.
+   
+## Naloge samo za for zanko
+
+1. Uporabnik naj vnese poljubno število (npr. 7). Program naj s pomočjo for zanke izpiše celotno poštevanko tega števila do 10. Primer izpisa:
+1 x 7 = 7
+2 x 7 = 14
+
+### Težje naloge za for zanko
+
+1. Uporabnik naj vnese poljubno število. Program naj preveri, ali je to število praštevilo (praštevila so deljiva samo z 1 in sama s seboj, npr. 2, 3, 5, 7, 11...). Zanka naj gre skozi vsa števila od 2 do nekaj manj kot vneseno število. Če med potjo najde število, ki ga deli brez ostanka, to ni praštevilo! Namig: Uporabi operator za ostanek pri deljenju %. Če velja stevilo % i == 0, se deli brez ostanka.
+
+### Nujna naloga
+
+Program naj uporabnika vpraša za število. Nato s pomočjo while zanke izpiše vsa števila od 1 do n (n je stevilo, ki ga je vpisal uporabnik).
