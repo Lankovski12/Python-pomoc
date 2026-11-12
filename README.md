@@ -222,6 +222,21 @@ Bonus naloga: 5 spremeni na uporabnikov vnos
 1 x 7 = 7
 2 x 7 = 14
 
+2. Naredimo 10x10 tabelo. V vsaki vrstici imamo poštevanko od 1 do 10.
+1 2 3 4 5 6 7 8 9 10 
+2 4 6 8 10 12 14 16 18 20 
+3 6 9 12 15 18 21 24 27 30 
+4 8 12 16 20 24 28 32 36 40 
+5 10 15 20 25 30 35 40 45 50 
+6 12 18 24 30 36 42 48 54 60 
+7 14 21 28 35 42 49 56 63 70 
+8 16 24 32 40 48 56 64 72 80 
+9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100
+
+3. Naredimo dve piramidi. Na sliki bomo naredili Full Pyramid in Half Pyramid. Bonus: naredi še katerokoli drugo.
+<img width="1568" height="1244" alt="slika" src="https://github.com/user-attachments/assets/f7928d04-6880-449f-baad-aa33106df776" />
+
 ### Težje naloge za for zanko
 
 1. Uporabnik naj vnese poljubno število. Program naj preveri, ali je to število praštevilo (praštevila so deljiva samo z 1 in sama s seboj, npr. 2, 3, 5, 7, 11...). Zanka naj gre skozi vsa števila od 2 do nekaj manj kot vneseno število. Če med potjo najde število, ki ga deli brez ostanka, to ni praštevilo! Namig: Uporabi operator za ostanek pri deljenju %. Če velja stevilo % i == 0, se deli brez ostanka.
