@@ -222,17 +222,43 @@ Bonus naloga: 5 spremeni na uporabnikov vnos
 1 x 7 = 7
 2 x 7 = 14
 
-2. Naredimo 10x10 tabelo. V vsaki vrstici imamo poštevanko od 1 do 10.
+2. Sedežni red v kinu
+Kino dvorana ima **3 vrste** (oštevilčene od 1 do 3) in v vsaki vrsti **4 sedeže** (oštevilčene od 1 do 4). Napiši program z dvojno `for` zanko, ki bo natisnil vse vstopnice za dvorano. 
+
+**Primer izpisa:**
+```text
+Vrsta 1, Sedež 1
+Vrsta 1, Sedež 2
+Vrsta 1, Sedež 3
+Vrsta 1, Sedež 4
+Vrsta 2, Sedež 1
+...
+```
+3. Predstavljaj si, da vržeš dve igralni kocki (vsaka ima številke od 1 do 6). Napiši program, ki bo z dvojno for zanko izpisal vse možne kombinacije, ki jih lahko vržeš. Bonus: Program naj poleg kombinacije preveri, ali je vsota obeh kock enaka 7. Če je, naj poleg kombinacije izpiše še "Srečna sedmica"
+
+**Primer izpisa:**
+```text
+1-1
+1-2
+1-3
+1-4
+...
+```
+
+4. Pozabil si 3-mestno kodo za svoj sef. Veš le to, da so vse tri številke med 0 in 9. Napiši program ki s tremi for zankami preizkusi vse kombinacije in izpiše pravo. Uporabi spodnjo kodo, da ti vsakič generira tri naključna števila, ki jih iščeš.
+```python
+s1 = random.randint(0, 9)
+s2 = random.randint(0, 9)
+s3 = random.randint(0, 9)
+```
+
+5. Naredimo 10x10 tabelo. V vsaki vrstici imamo poštevanko od 1 do 10.
 <img width="450" height="388" alt="slika" src="https://github.com/user-attachments/assets/40c491ad-bc92-4473-8d21-23f8d37d5ba5" />
 
 
-3. Naredimo dve piramidi. Na sliki bomo naredili Full Pyramid in Half Pyramid. Bonus: naredi še katerokoli drugo.
+6. Naredimo dve piramidi. Na sliki bomo naredili Full Pyramid in Half Pyramid. Bonus: naredi še katerokoli drugo.
 <img width="1568" height="1244" alt="slika" src="https://github.com/user-attachments/assets/f7928d04-6880-449f-baad-aa33106df776" />
 
 ### Težje naloge za for zanko
 
 1. Uporabnik naj vnese poljubno število. Program naj preveri, ali je to število praštevilo (praštevila so deljiva samo z 1 in sama s seboj, npr. 2, 3, 5, 7, 11...). Zanka naj gre skozi vsa števila od 2 do nekaj manj kot vneseno število. Če med potjo najde število, ki ga deli brez ostanka, to ni praštevilo! Namig: Uporabi operator za ostanek pri deljenju %. Če velja stevilo % i == 0, se deli brez ostanka.
-
-### Nujna naloga
-
-Program naj uporabnika vpraša za število. Nato s pomočjo while zanke izpiše vsa števila od 1 do n (n je stevilo, ki ga je vpisal uporabnik).
