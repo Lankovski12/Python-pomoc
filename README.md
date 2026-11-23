@@ -245,7 +245,7 @@ Vrsta 2, Sedež 1
 ...
 ```
 
-4. Pozabil si 3-mestno kodo za svoj sef. Veš le to, da so vse tri številke med 0 in 9. Napiši program ki s tremi for zankami preizkusi vse kombinacije in izpiše pravo. Uporabi spodnjo kodo, da ti vsakič generira tri naključna števila, ki jih iščeš.
+4. Pozabil si 3-mestno kodo za svoj sef. Veš le to, da so vse tri številke med 0 in 9. Napiši program ki s tremi for zankami preizkusi vse kombinacije in izpiše pravo. Spodnje tri vrstice prilepi čisto na začetek programa, da ti vsakič generira tri naključna števila, ki jih iščeš. Če želiš da je geslo daljše od treh števil, samo dadaj še več vrstic spodnje kode. Pazi, kako boš preverjal if pogoj!
 ```python
 s1 = random.randint(0, 9)
 s2 = random.randint(0, 9)
