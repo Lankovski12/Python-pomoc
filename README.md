@@ -478,34 +478,70 @@ Uporabnik naj vnese poljubno število. Program naj preveri, ali je to število p
 
 ## Naloge: seznami
 
-**1. Izpis ocen**
+**1. Nakupovalna košarica**
 
-Naredi seznam ocen `ocene = [4, 5, 3, 5, 2, 4]`. S for zanko izpiši vsako oceno v svojo vrstico. Na koncu izpiši še, koliko ocen je v seznamu.
+V trgovini si v košarico dal nekaj izdelkov. Njihove cene so shranjene v seznamu `cene = [3, 12, 5, 8, 2]`. Napiši program, ki se s for zanko sprehodi čez košarico in za vsak izdelek izpiše, koliko stane. Na koncu naj izpiše, koliko moraš plačati skupaj.
 
-*Namig:* Za število ocen uporabi `len(ocene)`.
-
-**2. Vnos števil**
-
-Naredi prazen seznam. Uporabnika petkrat vprašaj "Vnesi število: " in vsako vneseno število dodaj v seznam. Na koncu izpiši celoten seznam.
-
-*Namig:* Uporabi `for i in range(5):` in `seznam.append(stevilo)`. Ne pozabi na `int()` pri inputu!
+V denarnici imaš 25 EUR. Če je skupni znesek večji od tega, naj program izpiše "Nimaš dovolj denarja, nekaj moraš vrniti na polico!", sicer pa "Lahko plačaš!".
 
 **Primer izpisa:**
 
 ```text
-Vnesi število: 3
-Vnesi število: 8
-Vnesi število: 1
-Vnesi število: 6
-Vnesi število: 2
-[3, 8, 1, 6, 2]
+Izdelek 1 stane 3 EUR
+Izdelek 2 stane 12 EUR
+Izdelek 3 stane 5 EUR
+Izdelek 4 stane 8 EUR
+Izdelek 5 stane 2 EUR
+Skupaj: 30 EUR
+Nimaš dovolj denarja, nekaj moraš vrniti na polico!
 ```
 
-**3. Samo soda števila**
+*Namig:* Za številko izdelka uporabi `for i in range(len(cene)):` in izpiši `i + 1`, saj indeksi začnejo pri 0.
 
-Imaš seznam `stevila = [7, 12, 3, 8, 15, 20, 1, 4]`. S for zanko se sprehodi čez seznam in izpiši samo soda števila.
+*Bonus:* Program naj izpiše še, koliko denarja ti ostane oziroma koliko ti ga manjka.
 
-*Namig:* Število je sodo, če velja `stevilo % 2 == 0`.
+**2. Lov na zaklad**
+
+Pred tabo je 8 skrinj, oštevilčenih od 0 do 7. V nekaterih je zlato, nekatere pa so prazne. Kaj je v skrinjah, je shranjeno v seznamu (0 pomeni prazno skrinjo):
+
+```python
+skrinje = [0, 0, 50, 0, 100, 0, 20, 0]
+```
+
+Igralec ima 3 poskuse. Program naj ga vsakič vpraša "Katero skrinjo odpreš (0-7)? ". Če je skrinja prazna, naj izpiše "Prazna skrinja!", sicer pa "Našel si [število] zlatnikov!". Na koncu izpiši, koliko zlatnikov je igralec zbral skupaj.
+
+*Namig:* Vrednost v izbrani skrinji dobiš s `skrinje[izbira]`.
+
+*Bonus:* Ko igralec skrinjo odpre, jo izprazni (vrednost nastavi na 0), da istega zlata ne more pobrati dvakrat.
+
+**3. Vremenska postaja**
+
+Postal si vremenar. Vsak dan v tednu izmeriš temperaturo. Naredi prazen seznam in uporabnika sedemkrat vprašaj "Temperatura za dan [številka dneva]: ". Vsako temperaturo dodaj v seznam.
+
+Ko so vse temperature vnesene, naj program:
+
+- izpiše celoten seznam,
+- izpiše, kateri dnevi so bili ledeni (temperatura pod 0),
+- na koncu izpiše, koliko ledenih dni je bilo.
+
+**Primer izpisa:**
+
+```text
+Temperatura za dan 1: 3
+Temperatura za dan 2: -2
+Temperatura za dan 3: 1
+Temperatura za dan 4: -5
+Temperatura za dan 5: 4
+Temperatura za dan 6: 0
+Temperatura za dan 7: -1
+[3, -2, 1, -5, 4, 0, -1]
+Dan 2 je bil leden!
+Dan 4 je bil leden!
+Dan 7 je bil leden!
+Ledenih dni: 3
+```
+
+*Namig:* Za dodajanje uporabi `temperature.append(t)`. Ne pozabi na `int()` pri inputu!
 
 **Težja naloga: Najboljši rezultat**
 
